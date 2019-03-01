@@ -48,7 +48,7 @@ L.tileLayer(
 ).addTo(myMap);
 
 // Get data
-const URL = '../map.json';
+const URL = 'https://xenom97.github.io/project3/map.json';
 
 // Fetch
 fetch(URL)
