@@ -1,0 +1,22 @@
+{
+    "places" : [
+      {
+        "location": [-6.218323, 106.801861],
+        "title"   : "Gelora Bung Karno Main Stadium",
+        "image"   : "images/stadion-gbk.jpg",
+        "review"  : "<p>Gelora Bung Karno Main Stadium is a multi-purpose stadium located at the center of the Gelora Bung Karno Sports Complex in Central Jakarta, Indonesia.</p>"
+      },
+      {
+        "location": [-6.219770, 106.805873],
+        "title"   : "Istora Senayan",
+        "image"   : "images/istora.jpg",
+        "review"  : "<p>Gelora Bung Karno Sports Palace (Indonesian: Istana Olahraga Gelora Bung Karno, abbreviated as Istora) is an indoor sporting arena located in Gelora Bung Karno Sports Complex, Jakarta, Indonesia. The capacity of the arena after 2018 reopening is 7,166. This arena is usually used for badminton tournaments.</p>"
+      },
+      {
+        "location": [-6.216785, 106.805703],
+        "title"   : "Aquatic Center",
+        "image"   : "images/stadion-aquatic.jpg",
+        "review"  : "The Aquatic Center Senayan has existed since the creation of the Senayan Sports Center in 1960. Ahead of the 2018 Asian Games, one of Asia's biggest swimming venues underwent a major renovation. After the renovation, the Senayan swimming pool is indeed more magnificent with white paint which is the main color of the venue.</p>"
+      }
+    ]
+  }

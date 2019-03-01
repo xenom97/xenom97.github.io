@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#df992f">
+        <meta name="description" content="Simple Calculator">
+        <title>Add 2 Numbers</title>
+        <link rel="stylesheet" href="css/add2numbers.css">
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class='menu' role="heading">
+                <img class="icon-logo" src="../images/favicon.ico" alt="icon-logo" role="img">
+                <a href=".." role="link">HOME</a>
+            </div>
+            <div class="cals">
+                <input type="text" size="5" placeholder="0" />
+                <span class="plus"> + </span>
+                <input type="text" size="5" placeholder="0" />
+                <button class="equal"> = </button>
+                <input type="text" size="5" readonly />
+                <span id="message"></span>
+            </div>
+            <div class='footer' role="contentinfo">
+                <p>Ahmad Purnomo &copy; 2018</p>
+            </div>
+        </div>
+
+        <script>
+            // add2numbers.js
+            function kalkulator() {
+                let angka = document.querySelectorAll('input');
+                let i1= parseInt(angka[0].value) ; //angka pertama
+                let i2= parseInt(angka[1].value) ; //angka kedua
+                angka[2].value= i1 + i2 ;
+                let pesan = document.getElementById('message');
+                pesan.innerHTML="Selesai";
+                }
+            let tombol = document.querySelector('button');
+            tombol.addEventListener('click', kalkulator);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{
+"short_name": "MWS - A.P.",
+"name": "Google Developer Kejar",
+"scope": "/",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "/",
+"background_color": "#df992f",
+"theme_color": "#038ccc"
+}

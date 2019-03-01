@@ -1,0 +1,108 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50px 150px 150px 150px 50px;
+    grid-gap: 2px;
+    background: rgb(255, 185, 80);
+}
+
+.menu {
+    background: rgb(3, 140, 204);
+    grid-column: 1/6;
+}
+
+.cals {
+    background: rgb(255, 185, 80);
+    grid-row: 2/5;
+    grid-column: 2/5;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer {
+    background: rgb(3, 140, 204);
+    grid-column: 1/6;
+    grid-row : 5/6;
+    text-align: center;
+    color: white;
+}
+
+i {
+    padding: 8px;
+}
+
+.icon-logo {
+    max-width: 80px;
+    padding: 5px;
+    max-height: 40px;
+}
+
+.menu a {
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+    padding: 10px 10px 10px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+input, .equal, .plus{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+.equal {
+    background: rgb(3, 140, 204);
+    color: white;
+    font-size: 32px;
+}
+
+.equal:hover {
+    background: transparent;
+}
+
+@media screen and (min-width: 1000px) {
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template-rows: 10% 26.66% 26.66% 26.66% 10%;
+        height: 100vh;
+    }
+    .menu a {
+        padding: 20px 0;
+    }
+    .icon-logo {
+        margin: 8px 0 8px 8px;
+    }
+    .menu {
+        display: inline-table;
+    }
+}

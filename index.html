@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hi</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<head>
+    <title>Ahmad Purnomo - Mobile Web Specialist</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Progressive Web App Task On Google Developer Kejar 2018">
+    <meta name="theme-color" content="#DF992F"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+</head>
+<body>
+    <div class="container" aria-label="main container">
+        <div class='menu' role="banner">
+            <img class="icon-logo" src="images/favicon.ico" alt="icon" role="img">
+            <a href="/" aria-label="Home" role="link">Mobile Web Specialist</a>
+        </div>
+        <div class="sidebar" role="complementary">
+            <picture>
+                <source media="(min-width: 550px)" alt="medium image" srcset="images/photo-medium.jpg" class="photo-sidebar">
+                <source media="(min-width: 750px)" alt="standart image" srcset="images/photo-large.jpg" class="photo-sidebar">
+                <img class="photo-sidebar" src="images/photo-small.jpg" alt="small image" role="img">
+            </picture>
+        </div>
+        <div class="konten" aria-label="First Content" role="navigation">
+            <a href="./project1/" role="link">Calculator</a>
+            <p>Add 2 Numbers</p>
+        </div>
+        <div class="konten" aria-label="Second Content" role="navigation">
+            <a href="./project2/" role="link">Map Box</a>
+            <p>Gelora Bung Karno Stadium</p>
+        </div>
+        <div class="konten" aria-label="Third Content" role="navigation">
+            <a href="./project3/" role="link">Maps Fetch JSON</a>
+            <p>Map Location With Fetch JSON</p>
+        </div>
+        <div class="footer" role="contentinfo">
+            <a href="#"><p>Ahmad Purnomo &copy; 2018</p></a>
+        </div>
+    </div>
+    <script type="application/javascript" src="js/main.js"></script>
+    <script type="application/javascript" src="service-workers.js"></script>
+</body>
 </html>
