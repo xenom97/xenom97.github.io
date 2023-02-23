@@ -20,4 +20,10 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+
+  runtimeConfig: {
+    public: {
+      openWeatherMapKey: '',
+    },
+  },
 });

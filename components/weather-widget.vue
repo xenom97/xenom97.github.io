@@ -57,6 +57,7 @@
 <script lang="ts" setup>
 const isShowModal = ref(true);
 const isFetching = ref(false);
+const runtimeConfig = useRuntimeConfig();
 /**
  * Copywriting: "Hey there! Want to know what the weather's like around you? Let us know your location and we'll show you!"
  */
@@ -107,7 +108,8 @@ function errorCallback(error: GeolocationPositionError) {
 function fetchWeather() {
   isFetching.value = true;
 
-  const apiKey = '0c5e715b1891b6bd4fd6f185e3d7e5ed';
+  const apiKey = runtimeConfig.public.openWeatherMapKey;
+
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${position.latitude}&lon=${position.longitude}&units=metric&appid=${apiKey}`
   )
