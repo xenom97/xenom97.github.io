@@ -9,7 +9,8 @@
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "yarn lint:js",
@@ -32,6 +33,7 @@
     "postcss-html": "^1.5.0",
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.4",
+    "push-dir": "^0.4.1",
     "stylelint": "^15.0.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recommended-vue": "^1.4.0",
