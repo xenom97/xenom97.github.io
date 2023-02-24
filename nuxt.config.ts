@@ -4,8 +4,6 @@ export default defineNuxtConfig({
     baseURL: '/xenom97.github.io/',
   },
 
-  ssr: false,
-
   css: ['~/assets/css/main.css'],
 
   postcss: {
