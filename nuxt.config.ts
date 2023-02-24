@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/xenom97.github.io/',
+    baseURL: '/',
+    buildAssetsDir: 'src',
   },
 
   css: ['~/assets/css/main.css'],
